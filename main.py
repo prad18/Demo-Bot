@@ -1,4 +1,5 @@
 import discord
+import os
 import requests
 import json
 
@@ -46,7 +47,7 @@ async def on_message(message):
         await message.channel.send('GOD of war')
 
 
-client.run('NzU2MTAyMzU1NTg1MzM1Mjk2.X2M9MQ.0sJUiBAr-9WJ3Qc-q124W5t6XvI',bot=True)
+client.run(os.environ('TOKEN'))
 
 
 
