@@ -1,4 +1,5 @@
 import discord
+from dotenv import load_dotenv
 import os
 import requests
 import json
@@ -46,8 +47,9 @@ async def on_message(message):
     if msg.startswith('%prad'):
         await message.channel.send('GOD of war')
 
+load_dotenv('.env')
 
-client.run(os.environ('TOKEN'))
+client.run(os.getenv('my_TOKEN'))
 
 
 
