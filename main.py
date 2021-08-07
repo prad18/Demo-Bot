@@ -45,7 +45,7 @@ async def on_message(message):
         await message.channel.send('PERO')
 
     if msg.startswith('%prad'):
-        await message.channel.send('GOD of war')
+        await message.channel.send('GOD')
 
 load_dotenv('.env')
 
